@@ -1,0 +1,27 @@
+<svg viewBox="0 0 280 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- CyT wordmark with precision element -->
+  <defs>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <!-- Reticle / crosshair icon -->
+  <circle cx="30" cy="32" r="18" stroke="#0f1623" stroke-width="2.5"/>
+  <circle cx="30" cy="32" r="8" stroke="#2563EB" stroke-width="2"/>
+  <circle cx="30" cy="32" r="2.5" fill="#2563EB"/>
+  <line x1="30" y1="10" x2="30" y2="18" stroke="#0f1623" stroke-width="2"/>
+  <line x1="30" y1="46" x2="30" y2="54" stroke="#0f1623" stroke-width="2"/>
+  <line x1="8" y1="32" x2="18" y2="32" stroke="#0f1623" stroke-width="2"/>
+  <line x1="42" y1="32" x2="52" y2="32" stroke="#0f1623" stroke-width="2"/>
+  <!-- Tick marks -->
+  <line x1="30" y1="14" x2="30" y2="16.5" stroke="#2563EB" stroke-width="1.5"/>
+  <line x1="30" y1="47.5" x2="30" y2="50" stroke="#2563EB" stroke-width="1.5"/>
+  <!-- CyT text -->
+  <text x="68" y="44" font-family="'Cabinet Grotesk', 'Geist', system-ui, sans-serif" font-weight="800" font-size="34" fill="#0f1623" letter-spacing="-1">CyT</text>
+  <!-- Separator -->
+  <line x1="140" y1="20" x2="140" y2="44" stroke="#e2e8f0" stroke-width="1.5"/>
+  <!-- Sub-tagline -->
+  <text x="150" y="30" font-family="'Geist Mono', 'SF Mono', monospace" font-weight="500" font-size="9" fill="#64748b" letter-spacing="2">SERVICIOS &amp;</text>
+  <text x="150" y="43" font-family="'Geist Mono', 'SF Mono', monospace" font-weight="500" font-size="9" fill="#64748b" letter-spacing="2">INSTRUMENTACIÓN</text>
+</svg>
