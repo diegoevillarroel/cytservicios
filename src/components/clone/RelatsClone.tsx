@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import { motion, useScroll, useTransform, useSpring, useMotionValue } from 'motion/react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
@@ -423,7 +423,8 @@ const Soluciones = () => {
           muted
           playsInline
           preload="auto"
-          className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+          poster="/assets/images/5179247336960494870.jpg"
+          className="absolute inset-0 w-full h-full object-cover pointer-events-none opacity-40"
         >
           <source src="/assets/grainient-1778185720133.webm" type="video/webm" />
         </video>
@@ -470,8 +471,18 @@ const Soluciones = () => {
 };
 
 // ─── Root Component ───────────────────────────────────────────────────────────
-const RelatsClone = () => (
-  <div className="bg-white text-[var(--color-primary)] font-hanken">
+const RelatsClone = () => {
+  useLayoutEffect(() => {
+    // Force play for Safari/Mobile
+    const videos = document.querySelectorAll('video');
+    videos.forEach(v => {
+      v.muted = true;
+      v.play().catch(() => {});
+    });
+  }, []);
+
+  return (
+    <div className="bg-white text-[var(--color-primary)] font-hanken">
     <Navbar />
     <Hero />
     <Restauracion />
@@ -488,6 +499,7 @@ const RelatsClone = () => (
           muted
           playsInline
           preload="auto"
+          poster="/assets/images/5179247336960494862.jpg"
           className="w-full h-full object-cover opacity-60 mix-blend-screen pointer-events-none"
         >
           <source src="/assets/pixel-blast-1778181929091.webm" type="video/webm" />
