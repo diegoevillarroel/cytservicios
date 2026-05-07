@@ -418,8 +418,12 @@ const Soluciones = () => {
     <section className="relative bg-white py-20 md:py-32 px-6 md:px-10 text-[var(--color-primary)] overflow-hidden min-h-[600px]">
       <div className="absolute inset-0 z-0">
         <video
-          autoPlay loop muted playsInline
-          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover pointer-events-none"
         >
           <source src="/assets/grainient-1778185720133.webm" type="video/webm" />
         </video>
@@ -478,7 +482,14 @@ const RelatsClone = () => (
     {/* B2B CTA Banner */}
     <section className="bg-[var(--color-primary)] py-24 md:py-40 px-6 md:px-10 text-white overflow-hidden relative min-h-[70vh] flex items-center">
       <div className="absolute inset-0 z-0">
-        <video autoPlay loop muted playsInline className="w-full h-full object-cover opacity-60 mix-blend-screen">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="w-full h-full object-cover opacity-60 mix-blend-screen pointer-events-none"
+        >
           <source src="/assets/pixel-blast-1778181929091.webm" type="video/webm" />
         </video>
         <div className="absolute inset-0 bg-[var(--color-primary)]/40 mix-blend-multiply" />
